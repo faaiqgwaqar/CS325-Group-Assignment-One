@@ -15,6 +15,6 @@ typedef struct dynArr {
 void initDynArr(struct dynArr *da, int newCapacity);
 void addDynArr(struct dynArr *da, int val);
 void freeDynArr(struct dynArr *da);
-void _dyArrDoubleCapacity(struct dynArr *da);
+void _dynArrDoubleCapacity(struct dynArr *da);
 
 #endif
