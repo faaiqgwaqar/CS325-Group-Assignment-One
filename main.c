@@ -10,5 +10,6 @@ int main(){
   dynArrPrint(&array);
   maxTest = dynamicProgMaxSubarray(&array);
   printf("\n\nMax is :%d\n\n", maxTest);
+  freeDynArr(&array);
   return 0;
 }
