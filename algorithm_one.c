@@ -10,7 +10,7 @@ int enumerationMaxSubarray(struct dynArr *da){
     for(i = 0; i < da->size; i++){
       for(j = i; j < da->size; j++){
         sum = 0;
-        for(k = i; k < j; k++){
+        for(k = i; k <= j; k++){
           sum += da->data[k];
         }
         if(sum > maxSum)
