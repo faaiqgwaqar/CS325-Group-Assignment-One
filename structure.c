@@ -32,3 +32,25 @@ void _dynArrDoubleCapacity(struct dynArr *da){
   da->size = oldSize;
   free(oldBuffer);
 }
+
+void dynArrGenerator(struct dynArr *da){
+  int i;
+  int randomVar;
+  int arrCap = 100;
+  int upper = 100;
+  int lower = -100;
+  srand(time(NULL));
+  initDynArr(da,arrCap);
+  for(i = 0; i < arrCap; i++){
+    randomVar = (rand() % (upper - lower + 1)) + lower;
+    addDynArr(da,randomVar);
+  }
+}
+
+void dynArrPrint(struct dynArr *da){
+  int i;
+  printf("[ ");
+  for(i = 0; i < da->size; i++)
+    printf("%d ",da->data[i]);
+  printf("]");
+}
