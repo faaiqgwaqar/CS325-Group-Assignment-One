@@ -4,4 +4,4 @@
 
 int betterEnumerationMaxSubarray(struct dynArr *da);
 
-#define
+#endif
