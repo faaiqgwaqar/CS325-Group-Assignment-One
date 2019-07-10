@@ -8,10 +8,12 @@ int main(){
   int maxTest;
   dynArrGenerator(&array);
   dynArrPrint(&array);
-  maxTest = dynamicProgMaxSubarray(&array);
-  printf("\n\nDynProg Result is :%d\n\n", maxTest);
+  maxTest = enumerationMaxSubarray(&array);
+  printf("\n\nEnumeration Result is :%d\n", maxTest);
   maxTest = betterEnumerationMaxSubarray(&array);
-  printf("\n\nBetterEnum Result is :%d\n\n", maxTest);
+  printf("\n\nBetterEnum Result is :%d\n", maxTest);
+  maxTest = dynamicProgMaxSubarray(&array);
+  printf("\n\nDynProg Result is :%d\n\n\n", maxTest);
   freeDynArr(&array);
   return 0;
 }
